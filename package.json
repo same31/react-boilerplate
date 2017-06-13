@@ -2,7 +2,7 @@
   "name": "npm-editor",
   "version": "0.1.0",
   "main": "lib/index.js",
-  "private": true,
+  "private": false,
   "dependencies": {
     "babel": "^6.23.0",
     "babel-polyfill": "^6.23.0",
