@@ -1,93 +1,67 @@
-Peditor: npm packages editor
+CodeFest Toulouse: boilerplate
 ===================
 
 
-This tool is based on Create React App and we configured it to make it easy to create, test and publish your React components to npm.
+Bienvenue au codefest toulouse. Ceci est notre boilerplate basé sur ReactJS. Il vous permettra d'avoir une base de développement pour réaliser au mieux l'épreuve qui vous a été assignée.
 
 ----------
 
 
-Getting started!
+Comment démarrer le boilerplate
 -------------
 
-The first step is to clone this repo and run that command in the root of the Peditor to install every dependencies
+La première étape est de cloner ce boilerplate sur votre ordinateur (sans déééééc). Puis d'installer tous les packages npm en tapant la commande suivante:
 
     npm install
-And then start the app with
+Ensuite, démarrez simplement l'appli
 
     npm start
-You can use yarn if you are more confortable with it.
+Il est possible d'utiliser yarn si vous préférez
 
-<i class="icon-list"></i> App Structure
+<i class="icon-list"></i> Structure de l'application
 -------------
 
-Our editor is structured this way
+Notre boilerplate est structuré de la facon suivante:
 
-    npm-packages-editor/
-	 lib/
-	   components/
-	     YourComponent/
-		index.js
-		package.json
-		YourComponent.js
-		README.md
+    boilerplate/
 	 node_modules/
 	   package.json
-	   public/
-	     index.html
-	     favicon.ico
+	 public/
+	   index.html
+	   favicon.ico
 	 src/
 	   App.css
 	   App.js
-	   App.test.js
 	   index.css
 	   index.js
-	   logo.svg
 	   node_modules/
 	      components/
+	         CodeFest/
+		        codefest_logo.png
+		        CodeFest.js
 	         YourComponent/
-		    index.js
-		    package.json
-		    YourComponent.js
-		    README.md
+		        package.json
 	  .babelrc
 	  package.json
 	  README.md
-      
 
-<i class="icon-code"></i> Development - the src folder
+
+<i class="icon-github"></i> Developpement
 -------------
 
-When your develop your components, you should only work in the `src/` folder. This is where your can display and modify your components.
+Un dossier YourComponent est présent dans le dossier /src/components. c'est juste un indication d'où placer votre composant afin que le jury puisse le retrouver simplement. Vous pouvez le nommer TheCodeFestTeamRocks si vous le souhaitez aussi.
 
-You need to create a folder `YourComponent/` (or whatever name you want to give it) in the `src/node_modules/components/`
-The file `App.js` is here to display your component after you import it.
+Un fichier pakage.json est également présent. N'oubliez pas d'y mettre les dépendences requises pour votre composant à chaque fois que vous en ajoutez une au boilerplate. cela nous permettra lors de l'integration quels sont les dépendances utilisées.
 
-Pretty simple. Don't forget to build your package.json in your component for your dependencies. 
-Here your have two choices to make it work. You can install your dependencies in the root of the app of in the component folder.
+La facon la plus facile pour tout le monde d'organiser votre projet serait de créer entièrement votre composant dans ce dossier de dev et d'en importer le rendu/index dans le fichier App se trouvant à la racine du dossier /src.
 
-If you choose to install them in your component folder, you'll have to delete it before you build it for production. Or make a .gitignore file. We advice you to install them at the root of the app.
-
-When you finished, you can push your code to Github, in your repo from the folder `YourComponent/` (or whatever....)
-
-<i class="icon-refresh"></i> Compile - the lib folder
+<i class="icon-code"></i> Github
 -------------
 
-Once you have finished to create your component and everything works... Well, Rock'n'Roll, let's publish it.
-Don(t forget to delete the `node_modules/` folder in your component folder or you'll end up with an error. So, from the root of the editor, your can simply run
+Un repo github est mis à la disposition de votre équipe (celui-ci oui). N'oubliez pas de push votre code régulièrement afin qu'on puisse suivre votre évolution, testez vos fonctionnalités et ainsi répondre à vos questions, si vous en avez évidemment.
 
-    npm run lib
+Si tout le monde suit cette hierarchie, on gagnera un temps foufou :)
 
-And, magic, with create-react-app it compiles your component ready to publish in the `lib/` folder. 
-After that, just go in the `lib/components/YourComponent/` folder and run
+Allé, Enjoy React, enjoy the code et bonne chance à tous.
 
-    npm publish
-
-All done and good to go. Now your can install your component wherever you want with 
-
-    npm install --save your-component
-
-even in the editor if your want to test it right away.
-
-
-
+N'héistez pas à nous poser des questions, on est là pour ça.
