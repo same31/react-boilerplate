@@ -51,9 +51,10 @@ Notre boilerplate est structuré de la facon suivante:
 
 Un dossier YourComponent est présent dans le dossier /src/components. c'est juste un indication d'où placer votre composant afin que le jury puisse le retrouver simplement. Vous pouvez le nommer TheCodeFestTeamRocks si vous le souhaitez aussi.
 
-Un fichier pakage.json est également présent. N'oubliez pas d'y mettre les dépendences requises pour votre composant à chaque fois que vous en ajoutez une au boilerplate. cela nous permettra lors de l'integration quels sont les dépendances utilisées.
+La facon la plus facile pour tout le monde d'organiser son projet serait de créer entièrement votre composant dans ce dossier de dev et d'en importer le rendu/index dans le fichier App se trouvant à la racine du dossier /src.
 
-La facon la plus facile pour tout le monde d'organiser votre projet serait de créer entièrement votre composant dans ce dossier de dev et d'en importer le rendu/index dans le fichier App se trouvant à la racine du dossier /src.
+Un fichier pakage.json est également présent. N'oubliez pas d'y mettre les dépendences requises pour votre composant à chaque fois que vous en ajoutez une au boilerplate. cela nous permettra lors de l'intégration de savoir quelles sont les dépendances utilisées.
+
 
 <i class="icon-code"></i> Github
 -------------
