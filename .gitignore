@@ -1,1 +1,19 @@
-/node_modules
+## Project
+/build/
+
+## Node
+node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+package-lock.json
+
+## IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+## macOS
+*.DS_Store
